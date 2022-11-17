@@ -2,8 +2,7 @@
     "name": "tuezy/micronucleus",
     "autoload": {
         "psr-4": {
-            "Tuezy\\": "src/",
-            "App\\": "App"
+            "Mod\\": "mod"
         }
     },
     "authors": [
@@ -11,8 +10,5 @@
             "name": "Hoang Tu",
             "email": "tuvo@pandavietnamsoftware.com"
         }
-    ],
-    "require": {
-        "laravel/framework": "*"
-    }
+    ]
 }

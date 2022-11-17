@@ -1,8 +1,4 @@
-#!/usr/bin/env php
 <?php
-define('ROOT', __DIR__ . DIRECTORY_SEPARATOR);
-
-$_ENV['APP_BASE_PATH'] = ROOT . "frm";
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
@@ -34,8 +30,8 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 | into the script here so we don't need to manually load our classes.
 |
 */
-require ROOT . '/vendor/autoload.php';
-require ROOT . '/frm/vendor/autoload.php';
+
+require __DIR__.'/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -48,18 +44,11 @@ require ROOT . '/frm/vendor/autoload.php';
 |
 */
 
-$app = require_once ROOT .'bootstrap/app.php';
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
-$app->instance("path", ROOT . "mod");
+$kernel = $app->make(Kernel::class);
+$response = $kernel->handle(
+    $request = Request::capture()
+)->send();
 
-$kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
-
-$status = $kernel->handle(
-    $input = new Symfony\Component\Console\Input\ArgvInput,
-    new Symfony\Component\Console\Output\ConsoleOutput
-);
-
-
-$kernel->terminate($input, $status);
-
-exit($status);
+$kernel->terminate($request, $response);
