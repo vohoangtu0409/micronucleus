@@ -2,32 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb0931d4-37f9-4808-8d99-61b36300a803" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Configs/configs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Controllers/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Controllers/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Controllers/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Controllers/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Controllers/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Controllers/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Models/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Views/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Views/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Views/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Views/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Views/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Auth/Views/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/ModulesServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Controllers/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Lang/en/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Lang/vi/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Providers/DashboardServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/layouts/empty.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/layouts/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/layouts/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/layouts/navbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/layouts/tabler.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/Views/pages/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/Modules/Dashboard/dashboard-routes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Configs/configs.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Configs/configs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Controllers/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Controllers/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Controllers/ForgotPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Controllers/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Controllers/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Controllers/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Controllers/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Controllers/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Controllers/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Controllers/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Models/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Models/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Views/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Views/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Views/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Views/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Views/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Views/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Views/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Auth/Views/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/Auth/Views/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/ModulesServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/Modules/ModulesServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/framework/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/framework/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/framework/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/framework/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/framework/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,20 +75,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Giang Nguyen/Desktop/github/micronucleus/framework",
+    "last_opened_file_path": "C:/Users/Giang Nguyen/Desktop/github/micronucleus/framework/Modules/Dashboard/Lang/vi",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\Modules\Auth\Controllers" />
-      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\Modules\Auth\Views" />
-      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\Modules\Auth\Models" />
-      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus" />
-      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\mod" />
+      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\framework\Modules\Dashboard\Lang\vi" />
+      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\framework\Modules\Dashboard\Views" />
+      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\framework\Modules\Dashboard\Views\layouts" />
+      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\framework\Modules\Dashboard" />
+      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\framework\Modules\Dashboard\Providers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\framework\Modules\Dashboard\Lang\en" />
+      <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\framework" />
       <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\mod" />
       <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\public\dashboard" />
       <recent name="C:\Users\Giang Nguyen\Desktop\github\micronucleus\App\Frontend" />
@@ -92,7 +108,8 @@
       <workItem from="1667382128136" duration="8206000" />
       <workItem from="1667880032532" duration="2835000" />
       <workItem from="1668415363691" duration="27241000" />
-      <workItem from="1668742228082" duration="20177000" />
+      <workItem from="1668742228082" duration="20367000" />
+      <workItem from="1669288109674" duration="8913000" />
     </task>
     <servers />
   </component>
