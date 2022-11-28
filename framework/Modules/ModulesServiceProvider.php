@@ -4,6 +4,7 @@ namespace Module;
 
 use Illuminate\Support\ServiceProvider;
 use Module\Auth\Providers\AuthServiceProvider;
+use Module\Core\Providers\CoreServiceProvider;
 use Module\Dashboard\Providers\DashboardServiceProvider;
 
 class ModulesServiceProvider extends ServiceProvider
@@ -15,7 +16,7 @@ class ModulesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->register(AuthServiceProvider::class);
+        $this->app->register(CoreServiceProvider::class);
         $this->app->register(DashboardServiceProvider::class);
     }
 

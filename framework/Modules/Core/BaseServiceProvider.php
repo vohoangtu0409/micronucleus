@@ -1,10 +1,10 @@
 <?php
 
-namespace Module\Auth\Providers;
+namespace Module\Core\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class AuthServiceProvider extends ServiceProvider
+abstract class BaseServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -13,10 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->loadMigrationsFrom(
-            dirname(__DIR__). "/Migrations"
-        );
-        $this->loadViewsFrom(dirname(__DIR__). "/Views", "auth");
+        $this->registerService();
     }
 
     /**
@@ -26,9 +23,12 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->bootService();
     }
 
-    private function replaceDefaultAuthConfiguration(){
+    protected abstract function registerService();
 
-    }
+    protected abstract function bootService();
+
+
 }

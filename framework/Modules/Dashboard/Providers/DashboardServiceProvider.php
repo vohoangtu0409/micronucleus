@@ -19,7 +19,6 @@ class DashboardServiceProvider extends ServiceProvider
         $this->loadViewsFrom(dirname(__DIR__). "/Views", "dashboard");
         $this->loadRoutesFrom(dirname(__DIR__). "/dashboard-routes.php");
 
-
     }
 
     /**

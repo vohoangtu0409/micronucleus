@@ -16,11 +16,10 @@ if(!isset($page)){
     <title>{{ $page->title }}</title>
 
     <!-- CSS files -->
-    <link href="./dist/css/tabler.min.css?1668287865" rel="stylesheet"/>
-    <link href="./dist/css/tabler-flags.min.css?1668287865" rel="stylesheet"/>
-    <link href="./dist/css/tabler-payments.min.css?1668287865" rel="stylesheet"/>
-    <link href="./dist/css/tabler-vendors.min.css?1668287865" rel="stylesheet"/>
-    <link href="./dist/css/demo.min.css?1668287865" rel="stylesheet"/>
+    <link href="{{ asset('assets/dashboard/dist/css/tabler.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/dashboard/dist/css/tabler-flags.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/dashboard/dist/css/tabler-payments.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/dashboard/dist/css/tabler-vendors.min.css') }}" rel="stylesheet"/>
     <style>
         @import url('https://rsms.me/inter/inter.css');
         :root {
@@ -30,21 +29,21 @@ if(!isset($page)){
 </head>
 <body @if(\Illuminate\Support\Facades\Route::is("dashboard.login")) style="background-color:#14314d" @endif>
 <div class="page">
-    @auth
+    @if(\Illuminate\Support\Facades\Auth::check() || \Illuminate\Support\Facades\Route::is('dashboard.blank'))
         @include("dashboard::layouts.header")
         @include("dashboard::layouts.navbar")
-    @endauth
+    @endif
     <div class="page-wrapper">
         <div class="page-body">
             @yield("content")
         </div>
-        @auth
+        @if(\Illuminate\Support\Facades\Auth::check() || \Illuminate\Support\Facades\Route::is('dashboard.blank'))
             @include("dashboard::layouts.footer")
-        @endauth
+        @endif
     </div>
 </div>
 <!-- Libs JS -->
 <!-- Tabler Core -->
-<script src="./dist/js/tabler.min.js?1668287865" defer></script>
+<script src="{{ asset('assets/dashboard/dist/js/tabler.min.js') }}" defer></script>
 </body>
 </html>
