@@ -3,7 +3,7 @@
     "autoload": {
         "psr-4": {
             "Tuezy\\": "src/",
-            "App\\": "App"
+            "App\\": "App/"
         }
     },
     "authors": [

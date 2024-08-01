@@ -15,6 +15,7 @@ return [
 
     'paths' => [
         resource_path('views'),
+        "dashboard" => dirname(__DIR__).'/../App/Dashboard/Views',
     ],
 
     /*
